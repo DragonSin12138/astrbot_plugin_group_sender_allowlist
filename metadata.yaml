@@ -5,5 +5,5 @@ desc: >-
   关闭会话隔离时，被放行的人仍共享同一条群会话记忆，多群可分别配置「谁在哪个群能用」，互不串台。配合日志可一眼看出是哪条规则拦了谁。
 help: 见 README.md
 version: v0.1.0
-author: local
-repo: ""
+author: DragonSin12138
+repo: "https://github.com/DragonSin12138/astrbot_plugin_group_sender_allowlist"
