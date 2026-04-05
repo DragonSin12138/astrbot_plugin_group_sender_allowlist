@@ -1,0 +1,29 @@
+{
+    "enable": {
+        "description": "启用群成员白名单",
+        "hint": "关闭后本插件不做任何处理",
+        "type": "bool",
+        "default": true
+    },
+    "admin_bypass": {
+        "description": "管理员豁免",
+        "hint": "开启后，AstrBot 全局 admins_id 中的 QQ 在受管群内不受本插件限制。若测试成员也在 admins_id 里，会一直放行——可关此项或临时从 admins_id 去掉该号。",
+        "type": "bool",
+        "default": true
+    },
+    "log_blocked": {
+        "description": "记录辅助排查日志",
+        "hint": "开启后额外输出：管理员豁免、无法解析发送者 ID 等。按 group_rules 实际拦截时无论此项如何都会打一条 INFO，标明插件名与规则来源，便于排查。",
+        "type": "bool",
+        "default": false
+    },
+    "group_rules": {
+        "description": "按群的允许发送者",
+        "hint": "每项一行「群号:允许的QQ,...」。仅当此处写了某群号时，本插件才会对该群做发送者过滤；未出现的群号本插件不处理。仅写「群号:」且冒号后为空表示允许列表为空（非管理员下全员拦截）。详见 README「一、易混场景」。",
+        "type": "list",
+        "items": {
+            "type": "string"
+        },
+        "default": []
+    }
+}

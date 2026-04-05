@@ -1,0 +1,9 @@
+name: astrbot_plugin_group_sender_allowlist
+display_name: 群发送者白名单
+desc: >-
+  AstrBot 用群号放行后，群里「谁都能 @ 机器人」？本插件在群聊里按 QQ 做二次白名单：只有写进 group_rules 的成员会走后续插件与 LLM，其他人直接被拦，适合办公群/粉丝群只给管理员或小范围用户体验。
+  关闭会话隔离时，被放行的人仍共享同一条群会话记忆，多群可分别配置「谁在哪个群能用」，互不串台。配合日志可一眼看出是哪条规则拦了谁。
+help: 见 README.md
+version: v0.1.0
+author: local
+repo: ""
